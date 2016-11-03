@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:alpha="1"
+	android:background="@drawable/background_login"
+    android:orientation="horizontal" >
+    <ImageButton 
+        android:id="@+id/ibIsShow"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_right"
+        />
+    <ListView
+        android:id="@+id/lvParkingLot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="2dp"
+        android:background="@drawable/background_login"
+        android:divider="@drawable/background_login"
+         />
+
+</LinearLayout>

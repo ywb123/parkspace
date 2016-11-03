@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/background_list"
+     >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_list_div">
+        <!-- descendantFocusability的作用：屏蔽子控件的focus属性 -->
+        <TextView
+            android:id="@+id/tvParkingLotName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#666666"
+            
+            android:text="停车场名称" />
+
+        
+        <com.wust.parking.view.ShowAmountView 
+            android:id="@+id/savAmount"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_height="60px"
+            ></com.wust.parking.view.ShowAmountView>
+        <TextView
+            android:id="@+id/tvParkingLotLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停车场地址" />
+        <TextView
+            android:id="@+id/tvParkingLotDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="距离" />
+
+       </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:orientation="vertical" >
+    <TextView
+            android:id="@+id/tvParkingLotName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="停车场名称" />
+    <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#666666"
+            android:text="距离" />
+    <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#666666"
+            android:text="车位" />
+
+</LinearLayout>

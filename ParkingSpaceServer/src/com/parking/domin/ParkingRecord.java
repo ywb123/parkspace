@@ -1,0 +1,52 @@
+package com.parking.domin;
+
+public class ParkingRecord {
+	private int id;
+	private int userId;
+	private int parkingLotId;
+	private long date;
+	private double duration;
+	private double grade;
+	
+	public ParkingRecord(){}
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public int getParkingLotId() {
+		return parkingLotId;
+	}
+	public void setParkingLotId(int parkingLotId) {
+		this.parkingLotId = parkingLotId;
+	}
+	public long getDate() {
+		return date;
+	}
+	public void setDate(long date) {
+		this.date = date;
+	}
+	public double getDuration() {
+		return duration;
+	}
+	public void setDuration(double duration) {
+		this.duration = duration;
+	}
+	public double getGrade() {
+		return grade;
+	}
+	public void setGrade(double grade) {
+		this.grade = grade;
+	}
+	
+	
+}

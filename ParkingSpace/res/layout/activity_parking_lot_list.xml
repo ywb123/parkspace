@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical" 
+	android:background="@drawable/background_list"
+    tools:context=".ParkingLotListActivity" >
+
+   <Spinner 
+       android:id="@+id/spGroup"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       />
+    <com.wust.parking.view.RefreshableView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshParkingLot"
+        >
+    <ListView
+        android:id="@+id/lvParkingLot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@drawable/background_list"
+         />
+	</com.wust.parking.view.RefreshableView>
+</LinearLayout>

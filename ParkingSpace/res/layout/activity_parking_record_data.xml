@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ParkingRecordDataActivity" >
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="最近一周的停车时间记录（xx小时:xx分钟）"
+        android:textColor="#999999"
+        />
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="52"
+        android:scrollbars="none" >
+
+        
+        <RelativeLayout
+	        android:id="@+id/rlColumnar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="最近一周停车次数"
+        android:textColor="#999999"
+        />
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="48"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/rlDiagram"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

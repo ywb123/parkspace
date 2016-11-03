@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_list"
+    tools:context=".ParkingLotDetailActivity" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_list_div">
+        <TextView
+            android:id="@+id/tvParkingLotName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="36sp"
+            android:background="@drawable/btn_head"
+            android:layout_weight="0.06" />
+        <TextView
+            android:id="@+id/tvParkingLotLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tvParkingLotPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="24sp"/>
+        
+		<com.wust.parking.view.ShowAmountView 
+            android:id="@+id/savAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            ></com.wust.parking.view.ShowAmountView>
+        
+       
+        <TextView
+            android:textColor="#666666"
+            android:id="@+id/tvParkingLotGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"/>
+        <RatingBar
+            android:id="@+id/rtGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0"/>
+        <TextView
+            android:id="@+id/tvParkingLotDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="24sp" />
+    </LinearLayout>
+    
+	<Chronometer
+	    android:id="@+id/chronometer"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    
+	    android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/btParking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:textSize="36sp"
+    	android:onClick="btParking"
+        android:background="@drawable/btn_head"
+    	android:text="开始停车"
+        />
+
+</LinearLayout>

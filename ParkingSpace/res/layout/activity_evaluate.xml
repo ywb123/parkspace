@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background_login">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="请对此次停车进行评分..."
+        android:textSize="25sp"
+        android:textColor="#181aaa"
+        android:background="@drawable/btn_head"/>
+    
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:numStars="5"
+        android:rating="4"
+        android:stepSize="0.5"/>
+    <EditText
+        android:id="@+id/etEvaluation"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:hint="请填写评价内容"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue"
+        android:text="提交"
+        android:layout_marginLeft="10dp"
+        android:textColor="@drawable/black"
+        android:onClick="onEvaluate"
+        android:textSize="30sp"
+        android:layout_weight="0.1" />
+</LinearLayout>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background_register">
+    <LinearLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:orientation="vertical"
+        android:background="@drawable/background_register_div" >
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:hint="昵称"
+            >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etLicenseNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="注册车牌号"
+            />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="登录密码"
+            />
+
+        <EditText
+            android:id="@+id/etPasswordAgain"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="确认登录密码"
+            />
+
+        <EditText
+            android:id="@+id/etCarModel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="请输入您的车型"
+            />
+
+        <EditText
+            android:id="@+id/etPayAcount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="你要绑定的支付账户"
+            />
+        <Button 
+            android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_weight="1"
+        	android:background="#15A0F5"
+    		android:textColor="#FF8C32"
+    		android:layout_marginLeft="2dp"
+    		android:onClick="registerOK"
+    		android:text="确认注册"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView  android:id="@+id/register_link"
+            android:text="@string/register_login_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#888"
+            android:textColorLink="#FF0066CC"
+            android:clickable="true"
+            android:onClick="backToLogin"/>
+        <ImageView android:id="@+id/miniTwitter_logo"
+            android:src="@drawable/leaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="25dp" />
+    </RelativeLayout>
+</LinearLayout>

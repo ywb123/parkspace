@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_list"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/btShowData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99AAAAAA"
+        android:textColor="#333333"
+        android:text="最近停车统计"
+        android:textSize="24sp"
+        />
+    <com.wust.parking.view.RefreshableView 
+        android:id="@+id/refreshRecord"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+        >
+	    <ListView 
+	        android:id="@+id/lvRecord"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/background_list"
+	        android:divider="#FFACDAE5"
+	        ></ListView>
+	</com.wust.parking.view.RefreshableView>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReleaseParkingLotActivity" >
+
+    <EditText 
+        android:id="@+id/etParkingLotName"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="停车场名称"
+        />
+
+    <EditText
+        android:id="@+id/etParkingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="停车位价格：/小时"
+        android:inputType="numberDecimal" />
+
+
+    <EditText
+        android:id="@+id/etParkingAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="停车位数目"
+        android:inputType="numberSigned" />
+
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        
+        <EditText
+	        android:id="@+id/etSearch"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="在地图上标注出停车场的位置"
+	        android:layout_weight="1"
+	        android:ems="10" />
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="btShowMap"
+        	android:text="显示"
+            />
+    </LinearLayout>
+    
+	<com.baidu.mapapi.map.MapView
+        android:id="@+id/showMapView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="1"
+         /> 
+      <Button 
+        android:layout_width="match_parent"
+       	android:layout_height="50dp"
+       	android:onClick="btSubmit"
+       	android:text="提交"/>
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+	    <Spinner
+	        android:id="@+id/sProvince"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:background="#15A0F5"
+    		android:textColor="#FF8C32"
+	         />
+	
+	    <Spinner
+	        android:id="@+id/sCity"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="2dp"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:background="#15A0F5"
+    		android:textColor="#FF8C32"
+	         />
+
+    </LinearLayout> 
+</LinearLayout>

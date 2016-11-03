@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333333"
+    tools:context=".WelcomeActivity" >
+    <Button
+        android:id="@+id/btCarOwner"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1"
+    	android:background="#AAFFFFFF"
+    	android:textColor="#FFFFFF"
+    	android:textSize="36sp"
+    	android:onClick="carOwner"
+        android:text="我有车>>" />
+
+    <Button
+        android:id="@+id/btParkingLotOwner"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1"
+    	android:background="#AAFFFFFF"
+    	android:textColor="#FFFFFF"
+    	android:textSize="36sp"
+    	android:onClick="parkingLotOwner"
+        android:text="我有停车位>>" />
+
+</LinearLayout>

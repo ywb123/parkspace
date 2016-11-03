@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_list"
+    android:orientation="vertical"
+    tools:context=".ParkingCarListActivity" >
+	<Button 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:onClick="showRecord"
+    	android:text="停车记录"
+	    />
+	<com.wust.parking.view.RefreshableView 
+        android:id="@+id/refreshRecord"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+        >
+	    <ListView 
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:background="@drawable/background_list"
+	    	android:dividerHeight="0dp"
+	    	android:divider="#FFACDAE5"
+	    	android:id="@+id/lvParkingCar"
+	        ></ListView>
+    </com.wust.parking.view.RefreshableView>
+</LinearLayout>
